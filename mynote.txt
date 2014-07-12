@@ -2172,3 +2172,7 @@ sudo nohup command &
 -------------------------------------------------------------------------
 
 socket + libevent + GoogleProtocolBuffer(c++/actionscript) + gperftools(tcmalloc) + gperf(散列函数生成工具) + <object pool> + <timer> + memcached/mongodb/mysql
+
+-------------------------------------------------------------------------
+关于 gcc 编译选项  -fstack-protector 堆栈保护选项
+实现原理：在栈底附近设置一个随机数，退出时检查该随机数是否变更。
